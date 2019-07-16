@@ -71,7 +71,7 @@ function getRandomQuote() {
 ***/
 function printQuote(){
     let randomQuote = getRandomQuote();
-    let html = ' ';
+    let html = '';
     html += '<p class="quote">' + randomQuote['quote'] + '</p>';
     html += '<p class="source">' + randomQuote['source'];
     if (randomQuote['citation'] !== undefined) {
@@ -83,7 +83,7 @@ function printQuote(){
 html += '</p>';
 html += document.getElementById('quote-box').innerHTML;
 }
-
+printQuote();
 
 
 /***
