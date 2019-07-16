@@ -10,7 +10,6 @@ let quotes = [
     {
       quote:'Be the change that you wish to see in the world.',
       source:'Mahatma Gandhi',
-      tags:'Inspirational'
     },
     {
       quote:'Nothing in this world is worth having or worth doing unless it means effort, pain, difficulty.',
@@ -68,9 +67,7 @@ function printQuote() {
       html += '<span class="citation">' + randomQuote['citation'] + '</span>';
     }  else if (randomQuote['year'] !== undefined) {
         html += '<span class="year">' + randomQuote['year'] + '</span>';
-    }    else if (randomQuote['tags'] !== undefined) {
-            html += '<span class="tags">' + randomQuote['tags'] + '</span>';
-        }
+    }    
 html += '</p>';
 document.getElementById('quote-box').innerHTML = html;
 
